@@ -1,0 +1,11 @@
+<div class="container">
+  <app-add-server (onaddServer)="addServer($event)"></app-add-server>
+  <hr>
+  <div >
+    <button class="btn btn-primary" (click)="changeName()">Change Name</button>
+    <button class="btn btn-danger" style="margin-left: 2px;" (click)="destroyComponent()">Destroy first component</button>
+    <app-list-server *ngFor="let server of servers" [element]="server" [name]="server.name">
+      <div class="panel-body" #content>{{server.description}} : From ng-content</div>
+    </app-list-server>
+  </div>
+</div>
