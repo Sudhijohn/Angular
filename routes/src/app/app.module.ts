@@ -17,6 +17,7 @@ import { AuthService } from './authService';
 import { canDeactivateGuard } from './servers/edit-server/can-deactivate-guard-service';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { ResolverService } from './servers/server/server.resolver.service';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 /*const appRoutes: Routes = [
   {path:"",component:HomeComponent},
@@ -38,7 +39,8 @@ import { ResolverService } from './servers/server/server.resolver.service';
     UserComponent,
     EditServerComponent,
     ServerComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    RecipeStartComponent
   ],
   imports: [
     BrowserModule,
